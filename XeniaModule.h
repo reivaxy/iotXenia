@@ -13,6 +13,6 @@ public:
   XeniaModule(XeniaConfigClass* config, int displayAddr, int displaySda, int displayScl);
   
 protected:
-  char* _customRegistrationData() override;
-  
+  char* _customData() override;
+  int _counter = 0;
 };

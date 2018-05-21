@@ -9,10 +9,10 @@
 XeniaModule::XeniaModule(XeniaConfigClass* config, int displayAddr, int displaySda, int displayScl):XIOTModule(config, displayAddr, displaySda, displayScl) {
 }
 
-char* XeniaModule::_customRegistrationData() {
-  //  Serial.println("XeniaModule::_customRegistrationData");
-  // Dummy for now
-//  char* data = (char *)malloc(100);
-//  sprintf(data, "{\"autoWake\":%d}", ((XeniaConfigClass*)_config)->getAutoWake());
-  return NULL;  
+char* XeniaModule::_customData() {
+  //  Serial.println("XeniaModule::_customData");
+  // Dummy for now, just counting the number of calls to test updated in master's slave collection when module is pingged
+  char* data = (char *)malloc(100);
+  sprintf(data, "{\"counter\":%d}", _counter++);
+  return data;  
 }
