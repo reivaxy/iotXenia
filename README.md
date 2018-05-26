@@ -1,5 +1,5 @@
 # iotXenia
-Remote controlled aquarium monitor (Iotinator slave module)
+Remote controlled aquarium monitor (Iotinator slave module on the Xiot framework)
 
 This module is intended to replace the aquaMonitor device (https://github.com/reivaxy/aquaMonitor) and is part of the iotinator framework.
 
