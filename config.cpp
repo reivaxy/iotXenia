@@ -7,7 +7,7 @@
 #include "config.h"
 
 
-XeniaConfigClass::XeniaConfigClass(unsigned int version, const char* name):ModuleConfigClass(version, name, sizeof(XeniaConfigStruct)) {
+XeniaConfigClass::XeniaConfigClass(unsigned int version, const char* name):ModuleConfigClass(version, "iotxenia", name, sizeof(XeniaConfigStruct)) {
 }
 
 /**

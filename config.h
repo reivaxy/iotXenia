@@ -10,8 +10,8 @@
 #include <XIOTConfig.h>
 #include <XUtils.h>
 
-#define CONFIG_VERSION 30
-#define CONFIG_NAME "Xenia"
+#define CONFIG_VERSION 1
+#define MODULE_NAME "Xenia"
 
 #define DEFAULT_AUTOWAKE_VALUE 0
 
