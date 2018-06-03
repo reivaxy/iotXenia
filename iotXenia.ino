@@ -18,12 +18,13 @@ XeniaModule* module;
 
 void setup(){
   Serial.begin(9600);
-  delay(500); // time to connect serial
+  delay(200);
   
   config = new XeniaConfigClass((unsigned int)CONFIG_VERSION, (char*)MODULE_NAME);
   config->init();
   
-  module = new XeniaModule(config, 0x3C, D5, D6);
+  module = new XeniaModule(config, 0x3C, 14, 12);
+  
      
 }
 
